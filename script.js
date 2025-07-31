@@ -45,3 +45,16 @@
         document.getElementById("seconds").innerText = seconds.toString().padStart(2, "0");
       }, 1000);
    
+
+  function openAndDownload() {
+    // 1. Open image in new tab
+    window.open('images/MTM- IITK Samanvay_2025_Final_WD-01-01.webp', '_blank');
+
+    // 2. Trigger PDF download
+    const link = document.createElement('a');
+    link.href = 'images/agenda.pdf';
+    link.download = 'agenda.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
