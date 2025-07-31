@@ -124,6 +124,17 @@ body {
   border-radius: 12px;
   object-fit: cover;
 }
+.about-paragraph {
+  text-align: justify;
+  line-height: 1.9;
+}
+
+@media (max-width: 767.98px) {
+  .about-paragraph {
+    text-align: justify; /* Switch from justify to left on mobile */
+    font-size: 1rem;  /* Slightly reduce size if needed */
+  }
+}
 
 /*why u should attend?*/
 .attend {
