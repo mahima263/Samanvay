@@ -58,3 +58,18 @@
     link.click();
     document.body.removeChild(link);
   }
+  function openAndDownload() {
+    const pdfUrl = 'images/agenda_compressed.pdf'; // Replace with your actual PDF path
+  
+    // Open in new tab
+    window.open(pdfUrl, '_blank');
+  
+    // Trigger download
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = 'agenda.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+  
