@@ -108,7 +108,7 @@ body {
 /* ✅ Extra Large Screens */
 @media (min-width: 1600px) {
   .banner-section {
-    height: 95vh;
+    height: 100vh;
   }
 
   .banner-img {
